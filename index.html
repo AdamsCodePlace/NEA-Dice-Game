@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>big product</title>
+    <link type="text/css" rel="stylesheet" href="lib/css/main.css" />
+    <script src="lib/js/index.js"></script>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="title">
+            <h1 id="title">Dice game</h1>
+            <hr />
+        </div>
+        <div class="score">
+            <p id="scores"> scores</p>
+            <table id="myTable">
+                <tr>
+                  <th><input class="inputBoxes" size="2px"></th>
+                  <th><input class="inputBoxes" size="2px"></th>
+                </tr>
+                <tr>
+                  <td id="score1">score</td>
+                  <td>score</td>
+                </tr>
+            </table>
+        </div>
+        <div class="p1Play">
+            <div class="container">
+                <div class="center">
+                  <button class="button" onclick="clickRoll('1')">Roll</button>
+                </div>
+            </div>
+        </div>
+        <div class="p2Play">
+            <div class="container">
+                <div class="center">
+                  <button class="button" onclick="clickRoll('2')">Roll</button>
+                </div>
+            </div>
+        </div>
+        <div class="p1Roll">
+            <p id="p1Roll"> Your Roll</p>
+        </div>
+        <div class="p2Roll">
+            <p id="p2Roll"> Your Roll</p>
+        </div>
+    </div>   
+</body>
+</html>
