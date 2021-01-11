@@ -11,18 +11,21 @@
     <div class="grid-container">
         <div class="title">
             <h1 id="title">Dice game</h1>
-            <hr />
         </div>
         <div class="score">
-            <p id="scores"> scores</p>
             <table id="myTable">
+                <style>
+                    table, td {
+                      border: 1px solid rgb(4, 87, 1);
+                    }
+                </style>
                 <tr>
                   <th><input class="inputBoxes" size="2px"></th>
                   <th><input class="inputBoxes" size="2px"></th>
                 </tr>
                 <tr>
                   <td id="score1">score</td>
-                  <td>score</td>
+                  <td id="score2">score</td>
                 </tr>
             </table>
         </div>
