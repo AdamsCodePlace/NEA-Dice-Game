@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>big product</title>
+    <link type="text/css" rel="stylesheet" href="lib/css/main.css" />
+    <script src="lib/js/index.js"></script>
+        <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-app.js"></script>
+
+        <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+        <script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-analytics.js"></script>
+    
+        <!-- Add Firebase products that you want to use -->
+        <script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-auth.js"></script>
+        <script>
+            // Your web app's Firebase configuration
+            // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+            var firebaseConfig = {
+                apiKey: "AIzaSyBpHaevvO8GqgS8SIpmMPZv54GFKWGxCho",
+                authDomain: "nea-june-2021.firebaseapp.com",
+                projectId: "nea-june-2021",
+                storageBucket: "nea-june-2021.appspot.com",
+                messagingSenderId: "657846846669",
+                appId: "1:657846846669:web:2524b378e73c9c29565584",
+                measurementId: "G-VX53MT1HGX"
+            };
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+            firebase.analytics();
+        </script>
+    <script src="lib/js/auth.js"></script>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="title">
+            <h1 id="title">Dice game</h1>
+        </div>
+        <div class="score">
+            <table id="myTable">
+                <style>
+                    table, td {
+                      border: 1px solid rgb(4, 87, 1);
+                    }
+                </style>
+                <tr>
+                  <th><input class="inputBoxes" size="2px"></th>
+                  <th><input class="inputBoxes" size="2px"></th>
+                </tr>
+                <tr>
+                  <td id="score1">score</td>
+                  <td id="score2">score</td>
+                </tr>
+            </table>
+        </div>
+        <div class="p1Play">
+            <div class="container">
+                <div class="center">
+                  <button class="button" onclick="clickRoll('1')">Roll</button>
+                </div>
+            </div>
+        </div>
+        <div class="p2Play">
+            <div class="container">
+                <div class="center">
+                  <button class="button" onclick="clickRoll('2')">Roll</button>
+                </div>
+            </div>
+        </div>
+        <div class="p1Roll">
+            <p id="p1Roll"> Your Roll</p>
+        </div>
+        <div class="p2Roll">
+            <p id="p2Roll"> Your Roll</p>
+        </div>
+        <div class="winner">
+            <p id="winner">the winner is</p>
+        </div>
+    </div>   
+</body>
+</html>
